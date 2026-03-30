@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Merriweather:wght@400;700&display=swap');
+
+body {
+    /* background-image: url('assets/background-parchment.jpg'); */
+    background-color: #fdf5e6; /* 羊皮紙のベースカラー */
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Merriweather', serif;
+    color: #4a3e35;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(253, 245, 230, 0.9);
+    border: 3px solid #8a6d4a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.character-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #c8a97e;
+    margin-bottom: 15px;
+}
+
+.scroll-box {
+    border-top: 2px dashed #a88d6c;
+    border-bottom: 2px dashed #a88d6c;
+    padding: 20px 10px;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+h1, h2 {
+    font-family: 'MedievalSharp', cursive;
+    color: #5d4037;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0 0 10px 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.speech {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.note-link {
+    font-weight: bold;
+    color: #8c4b33;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.note-link:hover {
+    text-decoration: underline;
+}
+
+/* RPG風ボタン (モバイル向けに調整) */
+.rpg-button {
+    display: block; /* 横幅いっぱいに広げる */
+    width: 90%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 15px auto;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    text-decoration: none;
+    background: linear-gradient(145deg, #8d6e63, #5d4037);
+    border: 2px solid #4e342e;
+    border-radius: 10px;
+    box-shadow: 0 4px 0 #4e342e, 0 6px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.rpg-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #4e342e, 0 3px 5px rgba(0,0,0,0.3);
+}
+
+#question-list-area {
+    text-align: left;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #c8a97e;
+    white-space: pre-wrap;
+    font-size: 0.9em;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    border: 4px solid #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
